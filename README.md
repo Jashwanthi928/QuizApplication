@@ -1,3 +1,5 @@
 # QuizApplication
 Responsive quiz taking application
-Updated by Jashwanthi
+repo updated by - debarun
+Updated by  Jashwanthi
+
