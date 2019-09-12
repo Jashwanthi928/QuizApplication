@@ -1,0 +1,46 @@
+/* .title{
+    position: absolute;
+    display:block;
+    background-color:#2A3362;
+    height: 14vh;
+    width: 100vw;
+    /* margin-left: 0.7em; */
+/* }
+#menu{
+    position:absolute;
+    margin-left: 19em;
+    margin-top:1em;
+    font-size: 2.5em;
+    color: black;
+}
+#logo{
+    position: absolute;
+    height:6em;
+    width: 6em;
+    margin-top: 1em;
+
+}  */
+.title{
+    position:relative;
+    display:block;
+    background-color:white;
+    height: 100vh;
+    width: 100wh;
+    font-size: 10em;
+    text-align: center;
+    padding-top: 80%;
+    font-weight:bold;
+    font-family:'Ropa Sans'
+}
+.quiz{
+    
+    color:#2A3362;
+    /* white-space: nowrap; */
+   
+}
+.on{
+    
+    color: rgb(18, 231, 221);
+    /* white-space: nowrap; */
+    
+}
