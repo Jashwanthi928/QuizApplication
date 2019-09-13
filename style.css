@@ -1,6 +1,9 @@
 #homepage{
     display:none;
 }
+#instructionpage{
+     display:none;
+}
 .my-navbar
 {
  max-width: 100%;

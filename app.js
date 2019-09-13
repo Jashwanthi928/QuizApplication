@@ -36,5 +36,7 @@ $(document).ready(function(){
  if(startbutton==='c'){
      	y= document.getElementById("homepage")
 	y.style.display="block";
+    z= document.getElementById("instructionpage")
+	z.style.display="block";
     
  }}
