@@ -1,14 +1,18 @@
+<!--
+Author: Debarun Mitra
+Technology used: HTML, CSS, JavaScript, JQuery, Bootstrap
+objective: Create a quiz application
+-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>QuizOn</title>
   </head>
@@ -21,8 +25,8 @@
           <p class="justify-content-sm-end user-name" href="#"></p>
         </div>
         <div id="myLinks">
-              <a class="links" href="#">Home</a>
-              <a class="links" href="#">Name</a>
+              <a class="links" href="#">Option 1</a>
+              <a class="links" href="#">Opiton 2</a>
           </div>
           <div class="form-inline">
             <a class="icon" href="#" onclick="barAccess()">
@@ -32,35 +36,51 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
+        <div class="row qcount-quit">
+          <div class="col">
+              <i class="question-number" style="font-style:normal;"></i><i class="total-que" style="font-style:normal;"></i>
+          </div>
+        <div class="col">
+          <input type="button" class="quit-btn" name="" value="QUIT">
+        </div>
+      </div>
+      <div class="row d-flex d-flex align-items-center flex-column">
+        <p class="questions">What is the capital of india?</p>
+      </div>
+      <div id="optionBtn" class="d-flex align-items-center flex-column"></div>
+        <div id="bottom-slider-btn" class="row">
+          <div class="col">
+            <button type="button" class="button prev" name="button"><i class="fa fa-chevron-left"></i></button>
+          </div>
+        <div class="col">
+            <button type="button" class="button next" name="button"><i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
       </div>
         <!-- The Modal -->
-        <div class="modal fade" id="myModal">
+        <!--div class="modal fade" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
 
               <!-- Modal Header -->
-              <div class="modal-header">
+              <!--div class="modal-header">
                 <h4 class="modal-title">Modal Heading</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
 
               <!-- Modal body -->
-              <div class="modal-body">
-                Modal body..
+              <!--div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                          <img src="images/startLogo.PNG" alt="startingLogo">
+                      </div>
+                </div>
               </div>
-
               <!-- Modal footer -->
-              <div class="modal-footer">
+              <!--div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div>
+              </div-->
 
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-<script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
