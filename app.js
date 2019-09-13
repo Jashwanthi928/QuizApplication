@@ -28,4 +28,13 @@ $(document).ready(function(){
 
 
 
+ function start(startbutton){
+     	x= document.getElementById("startpage")
+	x.style.display="none";
+    
  
+ if(startbutton==='c'){
+     	y= document.getElementById("homepage")
+	y.style.display="block";
+    
+ }}

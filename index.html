@@ -15,7 +15,8 @@
    <title>QuizOn</title>
  </head>
  <body>
-   <nav class="my-navbar">
+   <div id="homepage">
+    <nav class="my-navbar" >
      <div class="topnav">
        <div class="d-flex justify-content-around">
          <img class="justify-content-sm-start logo-icon" src="quizlogo.png" ></img>
@@ -33,25 +34,27 @@
          </div>
      </div>
    </nav>
-   <div class="container">
-     <div class="row">
-     </div>
-       <!-- The Modal -->
-       <div class="modal fade" id="myModal">
-         <div class="modal-dialog">
-           <div class="modal-content">
-             <!-- Modal body -->
-             <div class="modal-body">
-               <div class="row">
-                  <img  class="quizname" src="quizname.png">
-                  <img class="quizfullname" src="quizfullname.png">
-                  <button class="start-btn">start</button>
+  </div>
+   
+               <div class="container" id="startpage">
+                <div class="row" >
+                    <!-- <div class="col-1"></div> -->
+                    <div class="col-12"><img  class="quizname" src="quizname.png"></div>
+                    <!-- <div class="col-2"></div> -->
+                </div>
+                <div class="row">
+                    <!-- <div class="col-1"></div>     -->
+                    <div class="col-12"><img class="quizfullname" src="quizfullname.png"></div>
+                    <!-- <div class="col-2"></div> -->
+                </div>
+                <div class="row">
+                    <!-- <div class="col-1"></div>  -->
+                    <div class="col-12"> <button class="start-btn" onclick="start('c')">start</button>
+                    <!-- <div class="col-2"></div> -->
+                </div>
                </div>
              </div>
-           </div>
-         </div>
-       </div>
-     </div>
+          
 <script type="text/javascript" src="app.js"></script>
  </body>
 </html>
