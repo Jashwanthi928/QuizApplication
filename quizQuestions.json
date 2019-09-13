@@ -1,0 +1,92 @@
+{
+	"Personalities": [{
+			"question": "Who was the 1st Prime Minister of India?",
+			"ans": "Pandit Jawaharlal Nehru",
+			"1": "Pandit Jawaharlal Nehru",
+			"2": "Lal Bahadur Shastri",
+			"3": "Gulzar Lal Nanda",
+			"4": "None of the Above"
+		},
+		{
+			"question": "The first Women External Affair Minister of India was:",
+			"ans": "Indira Gandhi",
+			"1": "Sushma Swaraj",
+			"2": "Jayalalitha",
+			"3": "Pratibha Patil",
+			"4": "Indira Gandhi"
+		},
+		{
+			"question": "Who among the following known as Pocket Hercules?",
+			"ans": "Manohar Aich",
+			"1": "Mike Tyson",
+			"2": "Manohar Aich",
+			"3": "Manotosh Roy",
+			"4": "Muhammad Ali"
+		},
+		{
+			"question": "Who among the following known as Pocket Hercules?",
+			"ans": "Manohar Aich",
+			"1": "Mike Tyson",
+			"2": "Manohar Aich",
+			"3": "Manotosh Roy",
+			"4": "Muhammad Ali"
+		},
+		{
+			"question": "Who was known as Iron man of India?",
+			"ans": "Sardar Vallabhbhai Patel",
+			"1": "Govind Ballabh Pant",
+			"2": "Jawaharlal Nehru",
+			"3": "Subhash Chandra Bose",
+			"4": "Sardar Vallabhbhai Patel"
+		},
+		{
+			"question": "The Indian to beat the computers in mathematical wizardry is",
+			"ans": "Shakunthala Devi",
+			"1": "Ramanujam",
+			"2": "Rina Panigrahi",
+			"3": "Raja Ramanna",
+			"4": "Shakunthala Devi"
+		},
+		{
+			"question": "Jude Felix is a famous Indian player in which of the fields?",
+			"ans": "Hockey",
+			"1": "Volleyball",
+			"2": "Tennis",
+			"3": "Football",
+			"4": "Hockey"
+		},
+		{
+			"question": "Professor Amartya Sen is famous in which of the fields?",
+			"ans": "Economics",
+			"1": "Electronics",
+			"2": "Economics",
+			"3": "Geology",
+			"4": "Biochemistry"
+		},
+		{
+			"question": "Which of the following was Satyajit Ray associated with?",
+			"ans": "Film Direction",
+			"1": "Classical music",
+			"2": "Commercial art",
+			"3": "Film Direction",
+			"4": "Classical dance"
+		},
+
+		{
+			"question": "Amjad Ali Khan is associated with which of the following musical instruments?",
+			"ans": "Sarod",
+			"1": "Veena",
+			"2": "Violin",
+			"3": "Sitar",
+			"4": "Sarod"
+		},
+		{
+			"question": "Who is known as the 'Lady with the Lamp'?",
+			"ans": "Florence Nightingale",
+			"1": "Sarojini Naidu",
+			"2": "Indira Gandhi",
+			"3": "Film Direction",
+			"4": "Joan of Arc"
+		}
+	]
+}
