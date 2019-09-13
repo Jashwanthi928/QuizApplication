@@ -1,54 +1,57 @@
+</html>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quizon</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Ropa Sans' rel='stylesheet'>
-</head>
-<body>
-        <!-- <div class="row">
-                <div class="col-12">
-                    <div class="title">
-                        <img src="quizon.png" alt="Trulli" id="logo">
-                        <div id="menu" class="fa fa-bars"> </div>
-                    </div>
-                </div>
-        </div> -->
-        <!-- <div class="row">
-                <div class="container">
-                    <div class="col-12">
-                            <div class="title">
-                               <span class="quiz">Q</span> 
-                               <span class="on">Z</span>
-                            </div>
-                    </div>
-                </div>
-            </div> -->
-        <div class="row">
-            <div class="container">
-                <div class="col-12">
-                        <div class="title">
-                           <span class="quiz" style="white-space: nowrap">Quiz</span> 
-                           <span class="on" style="white-space: nowrap">On</span>
-                        </div>
-                </div>
-            </div>
-        </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://fonts.googleapis.com/css?family=Ropa Sans' rel='stylesheet'>
+   <title>QuizOn</title>
+ </head>
+ <body>
+   <nav class="my-navbar">
+     <div class="topnav">
+       <div class="d-flex justify-content-around">
+         <img class="justify-content-sm-start logo-icon" src="quizlogo.png" ></img>
+         <p class="justify-content-sm-center timer-count" href="#">15:28</p>
+         <p class="justify-content-sm-end user-name" href="#"></p>
+       </div>
+       <div id="myLinks">
+             <a class="links" href="#">Home</a>
+             <a class="links" href="#">Name</a>
+         </div>
+         <div class="form-inline">
+           <a class="icon" href="#" onclick="barAccess()">
+             <i class="fa fa-bars icon-bar" aria-hidden="true"></i>
+           </a>
+         </div>
+     </div>
+   </nav>
+   <div class="container">
+     <div class="row">
+     </div>
+       <!-- The Modal -->
+       <div class="modal fade" id="myModal">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <!-- Modal body -->
+             <div class="modal-body">
+               <div class="row">
+                  <img  class="quizname" src="quizname.png">
+                  <img class="quizfullname" src="quizfullname.png">
+                  <button class="start-btn">start</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+<script type="text/javascript" src="app.js"></script>
  </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-    <script type="text/javascript" src="app.js"></script>
 </html>
