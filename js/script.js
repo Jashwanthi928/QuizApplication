@@ -1,3 +1,6 @@
+// Author: Debarun Mitra
+// Technology used: HTML, CSS, JavaScript, JQuery, Bootstrap
+// objective: Create a quiz application
 let bar=document.getElementById('myLinks');
 function barAccess()
 {
@@ -13,14 +16,6 @@ function barAccess()
   }
 }
 $(document).ready(function(){
-  $('#myModal').modal('show');
-/*  $(window).load(function(){
-                 $('#exampleModal').modal('show');
-             });*/
-        //     $('#myModal').on('click', function () {
-          //     $('#myInput').trigger('focus')
-            // })
-      /*$(window).load(function(){
-         $('#myModal').modal('show');
-       });*/
+  // $('#myModal').modal('show');
+
 });
