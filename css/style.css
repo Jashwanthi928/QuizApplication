@@ -1,9 +1,6 @@
 /* Author: Debarun Mitra
 Technology used: HTML, CSS, JavaScript, JQuery, Bootstrap
 objective: Create a quiz application */
-.root{
-
-}
 .my-navbar
 {
   max-width: 100%;
@@ -153,16 +150,17 @@ objective: Create a quiz application */
 }
 .submit-btn
 {
-  border: none;
-  border-radius:50%;
   margin-left: 40%;
+  border: solid;
   outline: none;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  background-color: green;
-  color: white;
-  width: 70px;
-  height: 80%;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border-color:green;
+  border-width: 3px;
+  border-radius: 23px;
 }
 .grade
 {

@@ -51,10 +51,9 @@ function clickedOption(id,que)
         localStorage.setItem("ans", JSON.stringify(userAns));
       }
   }
-  //console.log(userAns);
 }
 $(document).ready(function() {
-  let qcount = 5,
+  let qcount = 10,
     op = 4,
     count = 0,
     nextPrev = 1;
@@ -63,7 +62,7 @@ $(document).ready(function() {
   $('.total-que').html(qcount);
   $("#optionBtn").empty();
   $('.questions').html(' ');
-   $('#startModal').modal('show');
+  $('#startModal').modal('show');
   /*random question set start*/
   $('.start-btn').click(function(){
     $('#startModal').modal('hide');
@@ -73,21 +72,21 @@ $(document).ready(function() {
         let queNo = Math.floor(Math.random() * jsonValues.responseJSON.Personalities.length);
         if (checkRepeat.includes(queNo)) {
           i = i - 2;
-          if (count >= 5) {
+          if (count >= qcount) {
             break;
           }
         } else {
-          if (count >= 5) {
+          if (count >= qcount) {
             break;
           }
           count = count + 1;
           checkRepeat.push(queNo);
           let dataToStore = JSON.stringify(jsonValues.responseJSON.Personalities[queNo]);
           localStorage.setItem(count, dataToStore);
-          console.log('stored');
         }
       }
     });
+      getQuestions(1);
   });
   /*random question set end*/
   /*question-option show start*/
@@ -142,6 +141,8 @@ $(document).ready(function() {
   $("#submitAns").click(function(){
   $("#questDiv").css("display","none");
   $("#userScore").css("display","block");
+  $(".timer-count").html('00:00');
+  clearInterval(startTimer);
   let point=0;
   for(i=1;i<=qcount;i++)
   {
@@ -169,10 +170,12 @@ $('.quit-btn').click(function(){
  $('#myModal').modal('show');
 });
 $('#ok').click(function(){
-    localStorage.clear();
+  //  localStorage.clear();
     $('#myModal').modal('hide');
-   // $('#startModal').modal('show');
    location.reload();
 });
   /*quit stop*/
+  $('.review-ans').click(function(){
+    location.reload();
+  });
 });

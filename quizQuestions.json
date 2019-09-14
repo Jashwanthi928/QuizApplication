@@ -88,6 +88,33 @@
 			"3": "Film Direction",
 			"4": "Joan of Arc"
 		}
+		,
+		{
+			"question": "Who is the architect of the world's longest constitution?",
+			"ans": "BR Ambedkar",
+			"1": "BR Rao",
+			"2": "BR Ambedkar",
+			"3": "C Rajagoplachari",
+			"4": "Jawaharlal Nehru"
+		}
+		,
+		{
+			"question": "Who has become the first Indian woman to scale Mount Everest for the 4th time?",
+			"ans": "Anshu Jamsenpa",
+			"1": "Anshu Jamsenpa",
+			"2": "Arunima Sinha",
+			"3": "Baichendri Pal",
+			"4": "None of the above"
+		}
+		,
+		{
+			"question": "Who is the black hole man of India?",
+			"ans": "Professor Vishweshwara",
+			"1": "Professor Singh",
+			"2": "Professor Ramayya",
+			"3": "Professor Vishweshwara",
+			"4": "Professor Ganesan"
+		}
 	],
 	"General science": [{
 			"question": "Brass gets discoloured in air because of the presence of which of the following gases in air?",
