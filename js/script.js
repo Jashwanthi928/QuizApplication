@@ -3,6 +3,7 @@
 // objective: Create a quiz application
 //navbar icon start
 let bar = document.getElementById('myLinks');
+const gradeMsg=["Improve!!","GOOD","GREAT!!"]
 let userAns = new Array();
 function barAccess() {
   if (bar.style.display == "block") {
@@ -12,6 +13,25 @@ function barAccess() {
   }
 }
 //navbar icon end
+//countDown start
+document.getElementById('timeCounter').innerHTML =9 + ":" + 59;
+function startTimer() {
+  let presentTime = document.getElementById('timeCounter').innerHTML;
+  let timeArray = presentTime.split(/[:]+/);
+  let m = timeArray[0];
+  let s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  document.getElementById('timeCounter').innerHTML = m + ":" + s;
+  setTimeout(startTimer, 1500);
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
+//countDown stop
+
 function clickedOption(id,que)
 {
   let optionVal=document.getElementById(id);
@@ -26,7 +46,8 @@ function clickedOption(id,que)
       else
       {
         optionVal.style.border="solid";
-        optionVal.style.borderColor="green";
+        optionVal.style.outline="none";
+        optionVal.style.borderColor="#374176";
         localStorage.setItem("ans", JSON.stringify(userAns));
       }
   }
@@ -40,34 +61,43 @@ $(document).ready(function() {
   let checkRepeat = new Array();
   checkRepeat = [];
   $('.total-que').html(qcount);
-  // $('#myModal').modal('show');
+  $("#optionBtn").empty();
+  $('.questions').html(' ');
+   $('#startModal').modal('show');
   /*random question set start*/
-  let jsonValues = $.getJSON("quizQuestions.json", function() {
-    for (i = 1; i <= qcount; i++) {
-      let queNo = Math.floor(Math.random() * jsonValues.responseJSON.Personalities.length);
-      if (checkRepeat.includes(queNo)) {
-        i = i - 2;
-        if (count >= 5) {
-          break;
+  $('.start-btn').click(function(){
+    $('#startModal').modal('hide');
+    startTimer();
+    let jsonValues = $.getJSON("quizQuestions.json", function() {
+      for (i = 1; i <= qcount; i++) {
+        let queNo = Math.floor(Math.random() * jsonValues.responseJSON.Personalities.length);
+        if (checkRepeat.includes(queNo)) {
+          i = i - 2;
+          if (count >= 5) {
+            break;
+          }
+        } else {
+          if (count >= 5) {
+            break;
+          }
+          count = count + 1;
+          checkRepeat.push(queNo);
+          let dataToStore = JSON.stringify(jsonValues.responseJSON.Personalities[queNo]);
+          localStorage.setItem(count, dataToStore);
+          console.log('stored');
         }
-      } else {
-        if (count >= 5) {
-          break;
-        }
-        count = count + 1;
-        checkRepeat.push(queNo);
-        let dataToStore = JSON.stringify(jsonValues.responseJSON.Personalities[queNo]);
-        localStorage.setItem(count, dataToStore);
       }
-    }
+    });
   });
   /*random question set end*/
   /*question-option show start*/
   let getQuestions = function(qc) {
     $("#optionBtn").empty();
+    $('.questions').html(' ');
     let retrievedObject = localStorage.getItem(qc);
     let parsedObject = JSON.parse(retrievedObject);
     $('.questions').html(parsedObject.question);
+    //console.log(parsedObject);
     $('.question-number').html('Question ' + qc + '/');
     for (j = 1; j <= op; j++) {
       let btn = '<div class="">' + '<input id="'+j+'" type="button" class="option" onclick="clickedOption('+j+','+qc+')" name="Option" value="' + parsedObject[j] + '"/>' + '</div>';
@@ -80,8 +110,14 @@ $(document).ready(function() {
   $('.next').click(function() {
     nextPrev += 1;
     if (nextPrev <= qcount) {
+      $('.prev').css("display","block");
       $("#optionBtn").empty();
       getQuestions(nextPrev);
+      if(nextPrev===qcount)
+      {
+        $('.next').css("display","none");
+        $('.submit-btn,.prev').css("display","block");
+      }
     } else {
       alert('You have seen all questions');
     }
@@ -93,10 +129,50 @@ $(document).ready(function() {
     if (nextPrev > 0) {
       $("#optionBtn").empty();
       getQuestions(nextPrev);
+      $('.next').css("display","block");
+      $('.submit-btn').css("display","none");
     } else {
       nextPrev = 0;
+      $('.prev').css("display","none");
       alert('This is the first question');
     }
   });
   /*next question end*/
+
+  $("#submitAns").click(function(){
+  $("#questDiv").css("display","none");
+  $("#userScore").css("display","block");
+  let point=0;
+  for(i=1;i<=qcount;i++)
+  {
+    let retrievedObject = localStorage.getItem(i);
+    let parsedObject = JSON.parse(retrievedObject);
+    if(userAns.includes(parsedObject.ans))
+    {
+      point+=1;
+    }
+  }
+  if(point<5)
+  {
+      $('.grade').html(gradeMsg[0]);
+  }
+  else if (point==5) {
+        $('.grade').html(gradeMsg[1]);
+  }
+  else if(point>5) {
+          $('.grade').html(gradeMsg[2]);
+  }
+  $('.score-point').html(`${point}/${qcount}`);
+  });
+  /*quit start*/
+$('.quit-btn').click(function(){
+ $('#myModal').modal('show');
+});
+$('#ok').click(function(){
+    localStorage.clear();
+    $('#myModal').modal('hide');
+   // $('#startModal').modal('show');
+   location.reload();
+});
+  /*quit stop*/
 });
