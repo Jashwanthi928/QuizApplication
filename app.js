@@ -32,7 +32,7 @@ $(document).ready(function(){
     
  }}
   //set minutes
-  var mins = 2;
+  var mins = 15;
   //calculate the seconds
   var secs = mins * 60;
   //countdown function is evoked when page is loaded

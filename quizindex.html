@@ -20,9 +20,19 @@
      <div class="topnav">
        <div class="d-flex justify-content-around">
          <img class="justify-content-sm-start logo-icon" src="quizlogo.png" ></img>
-         <p class="justify-content-sm-center timer-count" href="#">15:28</p>
+         <p class="justify-content-sm-center timer-count" href="#">
+           <div>
+             <input id="minutes" type="text" style="width: 10px;
+              border: none; font-size: 16px;
+              font-weight: bold; color: black;"><font size="5"> :
+                          </font>
+             <input id="seconds" type="text" style="width: 20px;
+                          border: none; font-size: 16px;
+                          font-weight: bold; color: black;">
+            </div>
+          </p>
          <p class="justify-content-sm-end user-name" href="#"></p>
-       </div>
+        </div>
        <div id="myLinks">
              <a class="links" href="#">Home</a>
              <a class="links" href="#">Name</a>
@@ -32,6 +42,7 @@
              <i class="fa fa-bars icon-bar" aria-hidden="true"></i>
            </a>
          </div>
+         
      </div>
    </nav>
   </div>
@@ -56,39 +67,50 @@
 
 
 
-
-            <div class="container" id="instructionpage">
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-12"style="text-align: center; margin-top:-20em">Instructions</div>
-                    <div class="col-4"></div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10"style="text-align: center; margin-top:-18em">1.Each question in the quiz is of multiple-choice format.</div>
-                    <div class="col-1"></div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10"style="text-align: center; margin-top:-15em">2. Click on the " > " button to go to the next question.</div>
-                    <div class="col-1"></div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10"style="text-align:center; margin-top:-10em" > 3.To start, click the "Next" button. </div>
-                    <div class="col-1"></div>
-                </div>
+             <div class="container">           
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Instructions</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1.Each question in the quiz is of multiple-choice format.</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2. Click on the " > " button to go to the next question.</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3.To start, click the "Next" button. </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4.When finished, click the "Submit Quiz" button. </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5. To quit the test, click the "Quit" button.   </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6. You can review your answers after completing  the test.   </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div>
             
-              <input id="minutes" type="text" style="width: 10px;
-                  border: none; font-size: 16px;
-                  font-weight: bold; color: black;"><font size="5"> :
-                              </font>
-              <input id="seconds" type="text" style="width: 20px;
-                              border: none; font-size: 16px;
-                              font-weight: bold; color: black;">
-          </div>
           
 <script type="text/javascript" src="app.js"></script>
  </body>
