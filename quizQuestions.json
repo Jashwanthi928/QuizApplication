@@ -24,12 +24,12 @@
 			"4": "Muhammad Ali"
 		},
 		{
-			"question": "Who among the following known as Pocket Hercules?",
-			"ans": "Manohar Aich",
+			"question": "Who is the creator of the Rock Garden in Chandigarh?",
+			"ans": "Pupal Jayakar",
 			"1": "Mike Tyson",
-			"2": "Manohar Aich",
-			"3": "Manotosh Roy",
-			"4": "Muhammad Ali"
+			"2": "Le Corbousier",
+			"3": "Glen",
+			"4": "Nek Chand"
 		},
 		{
 			"question": "Who was known as Iron man of India?",
@@ -84,9 +84,36 @@
 			"question": "Who is known as the 'Lady with the Lamp'?",
 			"ans": "Florence Nightingale",
 			"1": "Sarojini Naidu",
-			"2": "Indira Gandhi",
+			"2": "Florence Nightingale",
 			"3": "Film Direction",
 			"4": "Joan of Arc"
+		}
+		,
+		{
+			"question": "Who is the architect of the world's longest constitution?",
+			"ans": "BR Ambedkar",
+			"1": "BR Rao",
+			"2": "BR Ambedkar",
+			"3": "C Rajagoplachari",
+			"4": "Jawaharlal Nehru"
+		}
+		,
+		{
+			"question": "Who has become the first Indian woman to scale Mount Everest for the 4th time?",
+			"ans": "Anshu Jamsenpa",
+			"1": "Anshu Jamsenpa",
+			"2": "Arunima Sinha",
+			"3": "Baichendri Pal",
+			"4": "None of the above"
+		}
+		,
+		{
+			"question": "Who is the black hole man of India?",
+			"ans": "Professor Vishweshwara",
+			"1": "Professor Singh",
+			"2": "Professor Ramayya",
+			"3": "Professor Vishweshwara",
+			"4": "Professor Ganesan"
 		}
 	],
 	"General science": [{
