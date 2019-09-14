@@ -1,3 +1,9 @@
+#homepage{
+    display:none;
+}
+#instructionpage{
+     display:none;
+}
 .my-navbar
 {
  max-width: 100%;
@@ -17,7 +23,7 @@
 #myLinks .links
 {
  color: white;
- background: #323D74;
+ background: #2A3362;
  padding: 14px 16px;
  font-size: 16px;
  display: block;
@@ -66,23 +72,26 @@
 }
 .quizname{
     margin-top:5em;
-    margin-left:10.5em;
+    /* margin-left:40em; */
+    /* padding:-6;  */
     height:11em;
     width:10em;
+    /* text-align: center */
 
 }
 .quizfullname{
-    margin-left:6em;
+    /* margin-left:35em; */
     margin-top:2em;
     height:8em;
     width:21em;
+    /* text-align: center; */
 
 }
-.modal-body{
+/* .modal-body{
     background-color:#FAFDFF;
-}
+} */
 .start-btn{
-    margin-left:3.5em;
+    /* margin-left:13.5em; */
     margin-top:4em;
     font-size:3em;
     /* border-radius:0,0,40%,40%; */
@@ -98,7 +107,16 @@ height: 26px; */
 
 background: #13FBED;
 border-radius: 43px;
+align-content: center;
 
 
+}
+#startpage{
+    background-color:#FAFDFF;
+    max-width: 100%;
+}
+
+body{
+    background-color:#FAFDFF;
 }
 
