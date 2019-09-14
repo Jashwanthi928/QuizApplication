@@ -36,7 +36,42 @@ objective: Create a quiz application
           </div>
       </div>
     </nav>
-    <div id="questDiv" class="container" style="display:block;">
+    <div id="instruction" class="container" style="display:block;">
+      <div style="padding:30px;" class="row d-flex d-flex align-items-center flex-column">
+        <table class="table">
+                               <td class="ins-head">Instructions</td>
+                           <tbody>
+                             <tr>
+                               <td><b>Points:</b>20</td>
+                               <td><b>Questions:</b>  10</td>
+                               <td><b>Time Limit:</b>  30 Min</td>
+                             </tr>
+                             <tr>
+                               <td><b>Correct answer:</b>   +1</td>
+                              <td></td>
+                               <td><b>Wrong answer:</b>  0</td>
+                             </tr>
+                      </tbody></table>
+      </div>
+      <div style="padding:30px;" class="row d-flex d-flex align-items-center flex-column">
+        <ul style="list-style-type:none;">
+          <li class="ins">1.Each question in the quiz is of multiple-choice format.</li>
+           <li class="ins">2. Click on the " > " button to go to the next question.</li>
+           <li class="ins">3.To start, click the "Next" button. </li>
+           <li class="ins">4.When finished, click the "Submit Quiz" button.</li>
+           <li class="ins">5. To quit the test, click the "Quit" button.   </li>
+           <li class="ins">6. You can review your answers after completing  the test.</li>
+      </ul>
+      </div>
+      <div class="row">
+  <div class="col"></div>
+  <div class="col-md-auto">
+    <button class="next-go" type="button" name="button">Next</button>
+  </div>
+  <div class="col col-lg-4"></div>
+</div>
+      </div>
+    <div id="questDiv" class="container" style="display:none;">
         <div class="row qcount-quit">
           <div class="col">
               <i class="question-number" style="font-style:normal;"></i><i class="total-que" style="font-style:normal;"></i>

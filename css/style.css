@@ -33,11 +33,34 @@ objective: Create a quiz application */
 {
   margin-top: 20%;
 }
+.ins-head
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ins
+{
+  padding: 10px;
+  color: black;
+}
+.next-go
+{
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border-color:gray;
+  border-width: 3px;
+  border-radius: 23px;
+}
 .start-btn
 {
   border: none;
   color: white;
-
   margin-top: 100%;
   background: #13FBED;
   border-radius: 43px;
