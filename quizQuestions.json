@@ -24,12 +24,12 @@
 			"4": "Muhammad Ali"
 		},
 		{
-			"question": "Who among the following known as Pocket Hercules?",
-			"ans": "Manohar Aich",
+			"question": "Who is the creator of the Rock Garden in Chandigarh?",
+			"ans": "Pupal Jayakar",
 			"1": "Mike Tyson",
-			"2": "Manohar Aich",
-			"3": "Manotosh Roy",
-			"4": "Muhammad Ali"
+			"2": "Le Corbousier",
+			"3": "Glen",
+			"4": "Nek Chand"
 		},
 		{
 			"question": "Who was known as Iron man of India?",
@@ -84,7 +84,7 @@
 			"question": "Who is known as the 'Lady with the Lamp'?",
 			"ans": "Florence Nightingale",
 			"1": "Sarojini Naidu",
-			"2": "Indira Gandhi",
+			"2": "Florence Nightingale",
 			"3": "Film Direction",
 			"4": "Joan of Arc"
 		}
