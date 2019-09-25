@@ -12,7 +12,7 @@ HTML, CSS, JavaScript, JQuery, Bootstrap,JSON
 Create a quiz application
 
 ## Images
-![StartImage](images/startImg.png) ![StartImage](images/instruction.png)
+![StartImage](images/startImg.png) ![questions](images/instructions.png)
 
 
 ## Guidelines
