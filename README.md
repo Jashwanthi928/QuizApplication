@@ -18,8 +18,7 @@ Create a quiz application
 4. After taking test you will get the score. 
 5. At last,you can review your answers.
 
-## Images
-![StartImage].(images/startImage.png)
 
 ## Visit:
-[QuizApplication](https://debarunmitra.github.io/QuizApplication/)
+[QuizOn](https://debarunmitra.github.io/QuizApplication/)
+
