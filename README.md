@@ -11,6 +11,10 @@ HTML, CSS, JavaScript, JQuery, Bootstrap,JSON
 ## Objective
 Create a quiz application
 
+## Images
+![StartImage](images/startImg.png)
+
+
 ## Guidelines
 1. when you open the app, popup modal will appear.
 2. This modal contains Quiz application logo and start button.
