@@ -207,5 +207,5 @@ objective: Create a quiz application */
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: gray;
-    margin-left: 35%;
+    cursor: pointer;
 }

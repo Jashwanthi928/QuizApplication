@@ -5,7 +5,6 @@
 let bar = document.getElementById('myLinks');
 const gradeMsg = ["Improve!!", "GOOD", "GREAT!!"]
 let userAns = new Array();let st;
-
 function barAccess() {
   if (bar.style.display == "block") {
     bar.style.display = "none";
@@ -14,6 +13,7 @@ function barAccess() {
   }
 }
 //navbar icon end
+
 //countDown start
 document.getElementById('timeCounter').innerHTML = 9 + ":" + 59;
 function startTimer() {
@@ -22,7 +22,9 @@ function startTimer() {
   let m = timeArray[0];
   let s = checkSecond((timeArray[1] - 1));
   if (s == 59) {
-    m = m - 1
+    if(m!==0){
+      m = m - 1;
+    }
   }
   document.getElementById('timeCounter').innerHTML = m + ":" + s;
   st=setTimeout(startTimer, 1000);
@@ -37,9 +39,11 @@ function checkSecond(sec) {
   return sec;
 }
 //countDown stop
+
+//user ans collection start
 function clickedOption(id, que, qset,qid) {
   let optionVal = document.getElementById(id);
-  userAns[que] ={"q_set":qset,"qid":qid,"ans":optionVal.value};
+  userAns[que] ={"opid":id,"q_set":qset,"qid":qid,"ans":optionVal.value};
   for (i = 1; i <= 4; i++) {
     if (i != id) {
       document.getElementById(i).style.border = "solid";
@@ -52,6 +56,8 @@ function clickedOption(id, que, qset,qid) {
     }
   }
 }
+//user ans collection end
+
 $(document).ready(function() {
   let qcount = 10,op = 4,count = 0,nextPrev = 1;
   let opArr=['a','b','c','d'];
@@ -61,6 +67,7 @@ $(document).ready(function() {
   $("#optionBtn").empty();
   $('.questions').html(' ');
   $('#startModal').modal('show');
+
   /*question load  start*/
   $('.start-btn').click(function() {
       $.ajax({
@@ -103,6 +110,14 @@ let getQuestions = function(qc) {
         $('.next').css("display", "none");
         $('.submit-btn,.prev').css("display", "block");
       }
+      if(JSON.stringify(userAns[nextPrev-1])!==undefined){
+          console.log('from next:['+nextPrev+']'+JSON.stringify(userAns[nextPrev-1].opid));
+          let sop=JSON.stringify(userAns[nextPrev-1].opid);
+          $("#"+parseInt(sop)).css("border","solid");
+          $("#"+parseInt(sop)).css("outline","0 !important");
+          $("#"+parseInt(sop)).css("outline","none");
+          $("#"+parseInt(sop)).css("border-color","green");
+      }
     } else {
       alert('You have seen all questions');
     }
@@ -121,15 +136,24 @@ let getQuestions = function(qc) {
     if (nextPrev > 0) {
       $("#optionBtn").empty();
       getQuestions(nextPrev);
-      $('.next').css("display", "block");
-      $('.submit-btn').css("display", "none");
+      $('.next').css("display","block");
+      $('.submit-btn').css("display","none");
+      if(JSON.stringify(userAns[nextPrev-1])!==undefined){
+        //  console.log('from next:['+nextPrev+']'+JSON.stringify(userAns[nextPrev-1].opid));
+          let sop=JSON.stringify(userAns[nextPrev-1].opid);
+          console.log(parseInt(sop));
+          $("#"+parseInt(sop)).css("border","solid");
+          $("#"+parseInt(sop)).css("outline","0 !important");
+          $("#"+parseInt(sop)).css("outline","none");
+          $("#"+parseInt(sop)).css("border-color","green");
+      }
     } else {
       nextPrev = 0;
       $('.prev').css("display", "none");
       alert('This is the first question');
     }
   });
-/*next question end*/
+/*prev question end*/
   $("#submitAns").click(function() {
   $("#userScore").css("display", "block");
   $("#questDiv,.timeCounter").css("display", "none");

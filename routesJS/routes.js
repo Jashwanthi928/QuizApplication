@@ -38,10 +38,9 @@ app.get('/ranQue',(req,res)=>{
   //check answer
   app.post('/checkAns',(req,res)=>{
     let point=0;
-        let reqData=req.body;
-        console.log(reqData[0].ans);
+      let reqData=req.body;
       for(let i=0;i<noq;i++){
-            if(reqData[i].ans!==null && reqData[i].q_set!==null && reqData[i].qid!==null){
+            if(reqData[i].ans!==null && reqData[i].q_set!==null && reqData[i].qid!==null && reqData[i].opid!==null){
               db.findOne({"q_set":reqData[i].q_set},{projection:{"_id":0,"questions":{$elemMatch:{"qid":reqData[i].qid}}}},(err,result)=>{
                 if (err)
                     console.log(err + " this error has occured");
@@ -60,6 +59,7 @@ app.get('/ranQue',(req,res)=>{
                 }
               });
             }
+            console.log("i: "+i);
       }
   });
 };
