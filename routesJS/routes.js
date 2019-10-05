@@ -1,3 +1,6 @@
+// Author: Debarun Mitra
+// Technology used: HTML, CSS, JavaScript, JQuery, Bootstrap
+// objective: Create a quiz application
 class Question
 {
   constructor(q,a,b,c,d,qset,qid){

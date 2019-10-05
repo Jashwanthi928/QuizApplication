@@ -1,3 +1,6 @@
+// Author: Debarun Mitra
+// Technology used: HTML, CSS, JavaScript, JQuery, Bootstrap
+// Objective: Create a quiz application
 const express=require('express');
 const mongodb=require('mongodb').MongoClient;
 const bodyParser=require('body-parser');
