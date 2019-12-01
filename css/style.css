@@ -1,4 +1,5 @@
-/* Author: Debarun Mitra
+/* Authors: Debarun Mitra
+           Jashwanthi V
 Technology used: HTML, CSS, JavaScript, JQuery, Bootstrap
 objective: Create a quiz application */
 .my-navbar
@@ -68,7 +69,7 @@ objective: Create a quiz application */
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
   width: 180px;
-  height: 80px;
+  height: 40px;
 }
 .logo-icon
 {
