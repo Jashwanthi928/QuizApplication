@@ -1,8 +1,9 @@
 # QuizApplication
-This is a Quizapp where everyone can take test and review their answers.
+This is a Quizapp where everyone can take test and results will be displayed at last.
 
 ## Authors:
 Jashwanthi V
+
 Debarun Mitra
 
 ## Technology used
@@ -16,19 +17,4 @@ Create a quiz application
 2. This modal contains Quiz application logo and start button.
 3. When you click start button, you will get instructions and start attempting the quiz.
 4. After taking test you will get the score. 
-5. At last,you can review your answers.
-
-## Visit:
-[QuizOn](https://debarunmitra.github.io/QuizApplication/)
-
-## Images
-![StartImage](images/startImg.png) 
-**********************************************************
-![instruction](images/instructions.png)
-**********************************************************
-![questions](images/question.png)
-**********************************************************
-![correctAns](images/correctAns.png)
-**********************************************************
-![score](images/scoreImg.png)
 

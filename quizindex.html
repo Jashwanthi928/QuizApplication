@@ -1,0 +1,115 @@
+</html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://fonts.googleapis.com/css?family=Ropa Sans' rel='stylesheet'>
+   <title>QuizOn</title>
+ </head>
+ <body >
+   <div id="homepage">
+    <nav class="my-navbar" >
+     <div class="topnav">
+       <div class="d-flex justify-content-around">
+         <img class="justify-content-sm-start logo-icon" src="quizlogo.png" ></img>
+         <p class="justify-content-sm-center timer-count" href="#">
+           <div>
+             <input id="minutes" type="text" style="width: 10px;
+              border: none; font-size: 16px;
+              font-weight: bold; color: black;"><font size="5"> :
+                          </font>
+             <input id="seconds" type="text" style="width: 20px;
+                          border: none; font-size: 16px;
+                          font-weight: bold; color: black;">
+            </div>
+          </p>
+         <p class="justify-content-sm-end user-name" href="#"></p>
+        </div>
+       <div id="myLinks">
+             <a class="links" href="#">Home</a>
+             <a class="links" href="#">Name</a>
+         </div>
+         <div class="form-inline">
+           <a class="icon" href="#" onclick="barAccess()">
+             <i class="fa fa-bars icon-bar" aria-hidden="true"></i>
+           </a>
+         </div>
+         
+     </div>
+   </nav>
+  </div>
+   
+               <div class="container" id="startpage">
+                <div class="row" >
+                    <div class="col-4"></div>
+                    <div class="col-4" style="text-align: center"><img  class="quizname" src="quizname.png"></div>
+                    <div class="col-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>    
+                    <div class="col-10" style="text-align: center"><img class="quizfullname" src="quizfullname.png"></div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"></div> 
+                    <div class="col-4" style="text-align: center"> <button class="start-btn" onclick="start('c'); countdown();">start</button></div>
+                    <div class="col-4"></div>
+               </div>
+             </div>
+
+
+
+             <div class="container"id="tab">           
+              <table class="table">
+                  <thead>
+                      <tr>
+                        <th>Instructions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Points   20</td>
+                        <td>Questions   10</td>
+                        <td>Time Limit   30 Minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Correct answer   +1</td>
+                        <td>Wrong answer  -1</td>
+                      </tr>
+                      <table class="table table-borderless">  
+                <tbody>
+                  <tr>
+                    <td>1.Each question in the quiz is of multiple-choice format.</td>
+                  </tr>
+                  <tr>
+                    <td>2. Click on the " > " button to go to the next question.</td>
+                  </tr>
+                  <tr>
+                    <td>3.To start, click the "Next" button. </td>
+                  </tr>
+                  <tr>
+                    <td>4.When finished, click the "Submit Quiz" button. </td>
+                  </tr>
+                  <tr>
+                    <td>5. To quit the test, click the "Quit" button.   </td>
+                  </tr>
+                  <tr>
+                    <td>6. You can review your answers after completing  the test.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           
+            
+          
+<script type="text/javascript" src="app.js"></script>
+ </body>
+</html>

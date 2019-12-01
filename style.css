@@ -1,0 +1,130 @@
+#homepage{
+    display:none;
+}
+#instructionpage{
+     display:none;
+}
+.my-navbar
+{
+ max-width: 100%;
+ height:550px;
+ color:white;
+ border-radius: 0px;
+}
+.topnav
+{
+ overflow: hidden;
+ background: #2A3362;
+}
+.topnav #myLinks
+{
+ display: none;
+}
+#myLinks .links
+{
+ color: white;
+ background: #2A3362;
+ padding: 14px 16px;
+ font-size: 16px;
+ display: block;
+ text-align: center;
+}
+.logo-icon
+{
+ height: 80px;
+}
+.user-name
+{
+ margin-left: 20%;
+ margin-top: 10px;
+ color: white;
+ padding: 12px 10px;
+ font-size: 20px;
+ display: block;
+ text-decoration: none;
+ font-family: serif;
+}
+.timer-count
+{
+ font-size: 30px;
+ margin-top: 18px;
+ margin-left: 22%;
+}
+.topnav a.icon{
+ background: #2A3362;
+ display: block;
+ color: white;
+ padding: 18px 18px;
+ position: absolute;
+ font-size: 30px;
+ right: 0;
+ top:0;
+}
+.topnav a.icon:hover
+{
+ background: #ddd;
+ color: black;
+}
+#myLinks a:hover
+{
+ background: #ddd;
+ color: black;
+}
+.quizname{
+    margin-top:5em;
+    /* margin-left:40em; */
+    /* padding:-6;  */
+    height:11em;
+    width:10em;
+    /* text-align: center */
+
+}
+.quizfullname{
+    /* margin-left:35em; */
+    margin-top:2em;
+    height:8em;
+    width:21em;
+    /* text-align: center; */
+
+}
+/* .modal-body{
+    background-color:#FAFDFF;
+} */
+.start-btn{
+    /* margin-left:13.5em; */
+    margin-top:4em;
+    font-size:3em;
+    /* border-radius:0,0,40%,40%; */
+    border-radius:40% 40% 40% 40%;
+    border:none;
+    font-family:ropa Sans;
+    color:white;
+    /* background-color:#13FBED; */
+    height:1.5em;
+    width:3em;
+    /* width: 92px;
+height: 26px; */
+
+background: #13FBED;
+border-radius: 43px;
+align-content: center;
+
+
+}
+#startpage{
+    background-color:#FAFDFF;
+    max-width: 100%;
+}
+
+body{
+    background-color:#FAFDFF;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
