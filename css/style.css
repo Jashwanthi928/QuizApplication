@@ -67,9 +67,9 @@ objective: Create a quiz application */
   border-radius: 43px;
   align-content: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-size: 25px !important;
   width: 170px;
-  height: 50px;
+  height: 50px !important;
 }
 .logo-icon
 {
