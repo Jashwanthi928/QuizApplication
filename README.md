@@ -23,6 +23,12 @@ https://quizon.netlify.com/
 
 
 ## Images
-![home](images/Homescreen.PNG)
+![home](images/home.PNG)
+
+![instruction](images/instruction.PNG)
+
+![question](images/question.PNG)
+
+![result](images/result.PNG)
 
 
